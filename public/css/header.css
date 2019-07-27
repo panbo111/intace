@@ -1,0 +1,217 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,pre{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} 
+a{  
+     text-decoration: none;
+  
+}  
+#layou-header{
+     width: 100%;
+     background-color:#e9546b;
+     height: 101px;
+     margin: 0 auto;
+}
+.logo{
+    display: block;
+    float: left;
+    margin-top:25px; 
+    margin-left: 10px;
+    width: 170px;
+    height: 53px;
+    background-image: url(../image/header/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.nav-header{
+    float: left;
+    margin-top:71px; 
+    margin-left: 40px;
+    width: 700px;
+    height: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 9999;
+}
+.nav-header li{
+ 
+    float: left;
+    width: 90px;
+    height: 44px;
+    margin-right: 5px;
+    list-style:none;
+}
+.nav-header>li>a{
+    display: block;
+    width: 88px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 2px;
+  
+}
+.portal{
+    float: right;
+}
+.loginbar{
+    margin-top: 4px;
+    margin-right:30px;
+    color: #fff;
+    width: 110px;
+    height: 20px;
+}
+.loginbar>a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 10px;
+}
+ .subnav{
+    height: 0;
+    overflow: hidden;
+    z-index: 999;
+   
+}
+#layou-header .nav-header .subnav li{
+    width: 100%;
+    border-top: 1px solid #f0f0f0;
+    color: #505050;
+}
+
+#layou-header .nav-header .subnav a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    color: inherit;
+    z-index: 999;
+}
+/*购物车*/
+#layou-header .basket{
+    float: right;
+    margin-top: 72px;
+    margin-right: 0px;
+    width: 80px;
+    height: 18px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+#layou-header .basket>a{
+    display: block;
+    float:right;
+   
+    width: 24px;
+    height: 20px;
+    margin: -3px 27px 0 0;
+    background-image: url(../image/header/icon_basket_header\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    }
+#layou-header .locator{
+    position: relative;
+    float: right;
+    margin-top: 70px;
+    margin-right: -95px;
+    width: 58px;
+    height: 19px;
+    padding-right: 20px;
+    border-right: 1px solid #fff;
+}  
+#layou-header .locator>span{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 10px;
+    height: 5px;
+    background-image: url(../image/header/icon_arrow_down.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+} 
+#layou-header .locator>p{
+    width: 62px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;   
+    z-index: 999; 
+}
+/*悬停*/
+li.sub:hover .subnav{
+    width: 90px;
+    height: 270px;
+    top: 29px;
+    left: 0;
+    z-index: 99999;
+    
+    background-color: #fff;
+    border: 1px solid #e9546b;
+    border-top: none;
+    border-radius: 0 0 2px 2px;  
+}
+li.sub0:hover .subnav{
+    width: 90px;
+    height: 45px;
+    top: 29px;
+    left: 0;
+    z-index: 999;
+   
+    background-color: #fff;
+    border: 1px solid #e9546b;
+    border-top: none;
+    border-radius: 0 0 2px 2px; 
+}
+li.sub1:hover .subnav{
+    width: 90px;
+    height: 45px;
+    top: 29px;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    border: 1px solid #e9546b;
+    border-top: none;
+    border-radius: 0 0 2px 2px; 
+}
+.nav-header li>a:hover{
+    border: 1px solid #f0f0f0 ;
+    border-radius: 2px;
+}
+.subnav li a:hover{
+    background: #e9546b;
+    color: #fff;
+
+}
+.locator{
+    position: relative;
+}
+.locator>ul{
+position: absolute;
+z-index: 9999;
+top: 27px;
+left: -13px;
+}
+.locator>ul li{
+    width: 100%;
+    border-top: 1px solid #f0f0f0;
+    color: #505050; 
+}
+.locator>ul>li a{
+    display: block;
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    z-index: 999;
+    background-color: #fff;
+    border: 1px solid #e9546b;
+    border-top: none;
+    border-radius: 0 0 2px 2px
+}

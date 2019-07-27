@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>卡卷兑换</title>
+    <style>
+        body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,pre{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} 
+a{  
+     text-decoration: none;
+  
+}  
+.layout{
+    
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.layout-container{
+    width: 100%;
+}
+.page-container{
+    position: relative;
+    width: 1200px; 
+    height: 540px;
+    margin: 0 auto;
+}
+.container-wrap{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1920px;
+    height: 540px;
+    margin-left: -960px;
+    background: url(./image/index/card_exchange_bg.jpg) no-repeat 50%;
+    background-size: cover;
+}
+.content-wrap{
+    width: 1200px;
+    height: 540px;
+    margin: 0 auto;
+}
+.form-wrap{
+    width: 610px;
+    height: 374px;
+    background: url(./image/index/mask_bg.png) repeat;
+    border-radius: 4px;
+    margin: 100px auto 0;
+    overflow: hidden;
+}
+.form-title{
+    width: 610px;
+    height: 62px;
+    background-color: #735858;
+    font-size: 24px;
+    line-height: 62px;
+    color: #fff;
+    text-align: center;
+}
+.remind{
+    display: block;
+    padding-top: 20px;
+    color: red;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 30px;
+}
+.form-body{
+    width: 480px;
+    margin: 52px auto 0;
+}
+.form-body>li:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.card-number{
+    margin-bottom: 20px;
+}
+.title{
+    float: left;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    color: #505050;
+}
+.content{
+    float: right;
+    width: 350px;
+    height: 40px;
+}
+.content input{
+    width: 308px;
+    height: 38px;
+    padding: 0 20px;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    line-height: 38px;
+    outline: none;
+}
+.operate{
+    width: 350px;
+    height: 60px;
+    margin-left: 130px;
+}
+.tips{
+    display: none;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #e9546b;
+}
+.btns-cancel{
+    float: right;
+    display: block;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #f3b4be;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+.btns-sure{
+    float: right;
+    display: block;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #e9546b;
+    border-radius: 2px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="layout">
+        <div class="layout-container">
+            <div class="page">
+                <div class="page-container">
+                    <div class="container-wrap">
+                        <div class="content-wrap">
+                            <div class="form-wrap">
+                                <p class="form-title">蛋糕卡兑换</p>
+                                <p class="remind">温馨提示：订单提交后视为蛋糕卡使用成功，请妥善保留您的卡号密码，蛋糕卡不记名不挂失，遗失不补。</p>
+                                <ul class="form-body">
+                                    <li class="card-number">
+                                        <div class="title">请输入卡券后五位</div>
+                                        <div class="content">
+                                            <input type="text" class="txt-number">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">请输入兑换卡密码</div>
+                                        <div class="content">
+                                            <input type="password" class="txt-pwd">
+                                        </div>
+                                    </li>
+                                    <li class="operate">
+                                        <p class="tips"></p>
+                                    </li>
+                                    <li class="operate">
+                                        <a href="javascript:;" class="btns-cancel">取&nbsp消</a>
+                                        <a href="javascript:;" class="btns-sure">确&nbsp定</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/comm.js"></script>
+</body>
+</html>

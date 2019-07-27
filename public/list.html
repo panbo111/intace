@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        dl,
+        dd,
+        pre {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .list-page {
+            width: 100%;
+            font-family: Microsoft Yahei;
+            font-size: 14px;
+        }
+
+        .page-container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .list-categories {
+            width: 100%;
+            padding: 15px 0;
+            margin: 40px 0;
+            border-bottom: 1px solid #45515e;
+        }
+
+        .frist {
+            float: left;
+        }
+
+        .title {
+            display: inline-block;
+            float: left;
+            width: 60px;
+            color: #505050;
+            text-align: right;
+        }
+
+        .content>a {
+            display: inline-block;
+            width: 80px;
+            height: 20px;
+            margin-left: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 2px;
+            color: #505050;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .content>a:hover {
+            background-color: #e9546b;
+            color: #fff;
+        }
+
+        .list-contents {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .list-contents>li {
+            float: left;
+            width: 291px;
+            margin: 0 12px 10px 0;
+            overflow: hidden;
+        }
+
+        .list-contents li:nth-child(4n+4) {
+            margin-right: 0px;
+        }
+
+        .list-contents .img {
+            position: relative;
+            width: 291px;
+            height: 291px;
+            overflow: hidden;
+        }
+
+        .list-contents .img img {
+            width: 100%;
+            border: none;
+            vertical-align: top;
+        }
+
+        .text {
+            width: 100%;
+            height: 109px;
+        }
+
+        .text .desc {
+            padding: 14px 0 11px;
+            font-size: 14px;
+            color: #b5b5b5;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-left: 10px;
+        }
+
+        .text .name {
+            margin-left: 5px;
+            color: #635859;
+        }
+
+        .name .cn {
+            padding-top: 10px;
+            font-size: 14px;
+            line-height: 30px;
+            margin-left: 20px;
+        }
+
+        .name .en {
+            font-size: 10px;
+            line-height: 30px;
+            margin-left: 20px;
+        }
+
+        .text .attr {
+            padding-top: 5px;
+            color: #e9546b;
+            margin-left: 20px;
+        }
+
+        .text .attr .price {
+            font-size: 14px;
+        }
+
+        .text .attr .pound {
+            font-size: 12px;
+        }
+
+        .list-contents li:hover {
+            box-shadow: 0 0 2px 1px #ff3961;
+
+        }
+
+        .text>a {
+            display: block;
+            float: right;
+            margin-right: 15px;
+            margin-top: -28px;
+            width: 28px;
+            height: 28px;
+            background-image: url(./image/index/icon_join_basket_rect.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+        }
+
+        .favor {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            z-index: 99;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-image: url(./image/index/icon_favor.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="list-page">
+        <div class="page-container">
+            <ul class="list-categories">
+                 <!--导航上-->
+                <li class="first">
+                    <div class="title">商品：</div>
+                    <div class="content">
+                        <a href="javascript:;">全部</a>
+                        <a href="javascript:;">芝士系列</a>
+                        <a href="javascript:;">巧克力系列</a>
+                        <a href="javascript:;">拿破仑系列</a>
+                        <a href="javascript:;">慕斯系列</a>
+                        <a href="javascript:;">乳脂系列</a>
+                        <a href="javascript:;">选拼</a>
+                    </div>
+                </li>
+                 <!--导航下-->
+                <li>
+                    <div class="title">口味：</div>
+                    <div class="content">
+                        <a href="javascript:;">拿破仑</a>
+                        <a href="javascript:;">水果</a>
+                        <a href="javascript:;">芝士</a>
+                        <a href="javascript:;">巧克力</a>
+                        <a href="javascript:;">慕斯</a>
+                        <a href="javascript:;">咖啡</a>
+                        <a href="javascript:;">鲜奶</a>
+                        <a href="javascript:;">无糖</a>
+                    </div>
+                </li>
+            </ul>
+             <!--商品-->
+            <ul class="list-contents">
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="">
+                            <img src="./image/index/p2c2018070310313220894.jpg" alt="">
+                            <span class="favor"></span>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <p class="desc">如丝滑般的柔软的口感。</p>
+                        <p class="name">
+                            <span class="cn">经典红丝绒</span>
+                            <span class="en">Love Red Velvet</span>
+                        </p>
+                        <p class="attr">
+                            <span class="price">￥198.00</span>
+                            <span class="pound">/1.2磅</span>
+                        </p>
+                        <a href="javascript:;" class="join-basket"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/comm.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,3 @@
+$(".locator").click(function(){
+    
+})

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        dl,
+        dd,
+        pre {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .strawberry-page,
+        .layout-container {
+            width: 100%;
+        }
+
+        .strawberry-page {
+            background-image: url(./image/index/body_bg.png);
+        }
+
+        .page-container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .strawberry-banner {
+            position: relative;
+            width: 1000px;
+            height: 486px;
+            margin: 0 auto;
+        }
+
+        .inner {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 1920px;
+            height: 486px;
+            margin-left: -960px;
+            background-image: url(./image/index/banner1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+        }
+
+        .strawberry-container {
+            width: 1000px;
+            margin: 0 auto;
+            padding-bottom: 200px;
+        }
+
+        .cake-pr {
+            position: relative;
+            width: 1000px;
+            height: 500px;
+        }
+
+        .cake-pr:after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        .cake.pl .text,
+        .strawberry-container .cake-pr .imgs{
+            right: 0;
+        }
+
+        .cake-pl .imgs,.strawberry-container .cake-pr .imgs{
+            position: absolute;
+            top: 0;
+            width: 450px;
+            height: 500px;
+        }
+ 
+        .cake-pr .text{
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 550px;
+            height: 500px;
+        }
+        .btn-buy1{
+            bottom: 112px;
+    left: 27px;
+        }
+        .btn-buy1{
+            display: block;
+    position: absolute;
+    width: 227px;
+    height: 56px;
+    background-image: url(./image/index/btn_buy.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 216px;
+        }
+        .cake-pl{position: relative;
+    width: 1000px;
+    height: 500px;
+    }
+    .cake-pl .imgs{
+        position: absolute;
+    top: 0;
+    width: 450px;
+    height: 500px;
+    }
+    .cake-pl .text{
+        position: absolute;
+    top: 0;
+    width: 550px;
+    height: 500px;
+    }
+    .btn-buy2{
+        display: block;
+    position: absolute;
+    width: 227px;
+    height: 56px;
+    background-image: url(./image/index/btn_buy.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 307px;
+    }
+    .cake-pl .text{
+        right: 0px;
+    }
+    .btn-buy3{
+        display: block;
+    position: absolute;
+    width: 227px;
+    height: 56px;
+    background-image: url(./image/index/btn_buy.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 320px;
+    left: 236px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="layout-container">
+        <div class="strawberry-page">
+            <div class="page-container">
+                <div class="strawberry-banner">
+                    <div class="inner"></div>
+                </div>
+                <div class="strawberry-container">
+                    <div class="cake-pr">
+                        <div class="imgs">
+                            <img src="./image/index/pc2018011514153998876.png" alt="">
+                        </div>
+                        <div class="text">
+                            <img src="./image/index/wx2018011514154318992.png" alt="">
+                            <a href="" class="btn-buy1"></a>
+                        </div>
+                    </div>
+                    <div class="cake-pl">
+                        <div class="imgs">
+                            <img src="./image/index/pc2018011609572459685.png" alt="">
+                        </div>
+                        <div class="text">
+                            <img src="./image/index/wx2018011609572998064.png" alt="">
+                            <a href="" class="btn-buy2"></a>
+                        </div>
+                    </div>
+                    <div class="cake-pr">
+                        <div class="imgs">
+                            <img src="./image/index/pc2018011609592475637.png" alt="">
+                        </div>
+                        <div class="text">
+                            <img src="./image/index/wx2018011609592959744.png" alt="">
+                            <a href="" class="btn-buy3"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/comm.js"></script>
+</body>
+
+</html>

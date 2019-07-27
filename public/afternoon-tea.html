@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下午茶</title>
+    <style>
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        dl,
+        dd,
+        pre {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .layout {
+            width: 100%;
+            min-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .layout-container {
+            width: 100%;
+        }
+
+        .page-tea {
+            background: url(./image/index/bg1.png);
+            background-size: 44px 44px;
+            position: relative;
+        }
+
+        .page-container {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .afternoon-tea-banner {
+            position: relative;
+            width: 1200px;
+            height: 485px;
+            margin: 0 auto;
+        }
+
+        .inner {
+            position: absolute;
+            top: 0;
+            z-index: 9;
+            left: 50%;
+            width: 1920px;
+            height: 485px;
+            margin-left: -960px;
+            background-image: url(./image/index/banner.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+        }
+
+        .txt1 {
+            font-size: 26px;
+            text-align: center;
+            line-height: 50px;
+            color: #a3a04b;
+            padding-top: 90px;
+        }
+
+        .group {
+            padding: 0 25px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cake {
+            display: inline-block;
+            padding-top: 80px;
+            width: 325px;
+            text-align: center;
+            margin-right: 71px;
+        }
+
+        .imgs {
+
+            display: block;
+
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+        }
+
+        .cake .cn {
+            line-height: 70px;
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        .cake .en {
+            line-height: 14px;
+            font-size: 14px;
+        }
+
+        .price {
+            line-height: 70px;
+            height: 70px;
+
+            color: #f27d89;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .buybtn {
+            display: block;
+            width: 180px;
+            height: 40px;
+            margin: 0 auto;
+            border-radius: 20px;
+            color: #fff;
+            background: #f9a780;
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 40px;
+        }
+
+        .txt4 {
+            padding-top: 120px;
+            padding-bottom: 250px;
+        }
+        .bg1, .bg2{
+            position: absolute;
+        }
+        .bg1{
+            
+            right: 0;
+    top: 30%;
+    width: 210px;
+    height: 550px;
+    background: url(./image/index/bgy1.png) no-repeat;
+    background-size: 211px 550px;
+        }
+        .bg2{
+            left: 0;
+    top: 45%;
+    width: 142px;
+    height: 384px;
+    background: url(./image/index/bgy2.png) no-repeat;
+    background-size: 142px 384px;
+        }
+        .bg3, .bg4{
+            position: absolute;
+            bottom: 0;
+        }
+        .bg3{
+            right: 0;
+    width: 287px;
+    height: 290px;
+    background: url(./image/index/bgy3.png) no-repeat;
+    background-size: 287px 290px;
+        }
+        .bg4{
+            left: 0;
+    width: 467px;
+    height: 229px;
+    background: url(./image/index/bgy4.png) no-repeat;
+    background-size: 467px 229px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="layout">
+        <div class="layout-container">
+            <div class="page-tea">
+                <div class="page-container">
+                    <div class="afternoon-tea-banner">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="txt1">
+
+                        全新下午茶系列
+                        <br>
+
+                        一口一口慢慢感受
+                        <br>
+
+                        IN在你心的幸福与满足
+
+                    </div>
+                    <div class="group">
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="javascript:;" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                        <div class="cake">
+                            <a href="" class="imgs">
+                                <img src="./image/index/p2c2019071818215889858.jpg" alt="">
+                            </a>
+                            <h3 class="cn">INBOX六罐组合装</h3>
+                            <p class="en">INBOX</p>
+                            <p class="price">
+                                <i class="rmb">￥</i>
+                                <span class="num">421.00</span>
+                                /
+                                <span class="unit">6盒装</span>
+                            </p>
+                            <a href="" class="buybtn">立即购买</a>
+                        </div>
+                    </div>
+
+                    <div class="txt4"></div>
+                </div>
+                <div class="bg1"></div>
+                <div class="bg2"></div>
+                <div class="bg3"></div>
+                <div class="bg4"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/comm.js"></script>
+</body>
+
+</html>

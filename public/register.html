@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <style>
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        dl,
+        dd,
+        pre {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .register-page {
+            width: 100%;
+
+        }
+
+        .register-page .page-container {
+            width: 1200px;
+            padding: 80px 0 160px;
+            margin: 0 auto;
+        }
+
+        .register-page .page-container .register-slogan {
+            float: left;
+            width: 572px;
+            height: 348px;
+            background: url(./image/login/login-slogan.png) no-repeat;
+            margin: 86px 0 0 48px;
+        }
+
+        .register-mode {
+            position: relative;
+            float: left;
+            width: 579px;
+            height: 520px;
+            border-left: 1px solid #c8c8c8;
+        }
+
+        .register-mode>ul {
+            width: 392px;
+            padding: 54px 0 0 98px;
+        }
+
+        .register-title {
+            font-size: 40px;
+            line-height: 32px;
+            color: #d6dce2;
+            text-align: center;
+        }
+
+        .register-mode ul li input {
+            width: 390px;
+            height: 50px;
+            background-color: #fafafa;
+            border: 1px solid #929eab;
+            border-radius: 4px;
+            margin-top: 18px;
+            font-size: 18px;
+            line-height: 50px;
+            color: #505050;
+            text-indent: 1em;
+            outline: none;
+        }
+
+        .page-container .register-mode ul li input.uReg {
+            float: left;
+            width: 260px;
+            margin-right: 8px;
+        }
+
+        .btn-reg {
+            float: right;
+            display: block;
+            width: 122px;
+            height: 52px;
+            background-color: #929eab;
+            border-radius: 4px;
+            margin-top: 18px;
+            font-size: 16px;
+            line-height: 52px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .page-container .register-mode ul li a.btn-register {
+            display: block;
+            width: 390px;
+            height: 50px;
+            background-color: #fff;
+            border: 1px solid #45515e;
+            border-radius: 4px;
+            margin: 18px 0 4px;
+            font-size: 20px;
+            line-height: 52px;
+            color: #fff;
+            text-align: center;
+            background-color: #45515f;
+        }
+
+        .register-mode :last-child p {
+            height: 30px;
+            margin-left: 10px;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="register-page">
+        <div class="page-container">
+            <div class="register-slogan"></div>
+            <div class="register-mode">
+                <ul>
+                    <li class="register-title">REGISTER</li>
+                    <li>
+                        <input type="text" class="uPhone" placeholder="请输入手机号码">
+                    </li>
+                    <li>
+                        <input type="text" class="uReg" placeholder="请输入验证码">
+                        <a href="" class="btn-reg">获取验证码</a>
+                    </li>
+                    <li>
+                        <input type="password" class="upwd" placeholder="请输入设置密码">
+                    </li>
+                    <li>
+                        <input type="password" class="upwd-again" placeholder="请确认输入设置密码">
+                    </li>
+                    <li>
+                        <a href="" class="btn-register">注册</a>
+                    </li>
+                    <li>
+                        <p>
+                            "已有账号"
+                            <a href="http://127.0.0.1:5500/login.html">登录</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>

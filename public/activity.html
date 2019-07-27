@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>特惠专区</title>
+    <style>
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        dl,
+        dd,
+        pre {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .szone-page {
+            width: 100%;
+            font-family: Microsoft Yahei;
+            font-size: 14px;
+            background-image: url(./image/index/bg.png);
+            overflow: hidden;
+
+
+        }
+
+        .page-container {
+            width: 100%;
+
+        }
+
+        .szone-banner {
+
+            width: 1200px;
+            height: 995px;
+            margin: 0 auto;
+        }
+
+        .inner {
+            width: 1200px;
+            height: 995px;
+            background-image: url(./image/index/bannerNew.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+        }
+
+        .szone-container {
+            z-index: 2;
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: -200px;
+            padding-bottom: 100px;
+        }
+
+        .szone-container .category {
+            z-index: 10;
+            width: 1200px;
+            padding-top: 110px;
+        }
+
+        .szone-container .category-title {
+            background-image: url(./image/index/category_title_cake.png);
+            width: 570px;
+            height: 40px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+        }
+
+        .section {
+            width: 1200px;
+            padding-top: 60px;
+            clear: both;
+        }
+
+        .section-title {
+            background-image: url(./image/index/section_title_new.png);
+            width: 106px;
+            height: 48px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+        }
+
+        .section-content {
+            width: 1200px;
+            padding-top: 60px;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .cake {
+            float: left;
+            width: 270px;
+            padding-bottom: 58px;
+            margin: 0 15px;
+        }
+
+        .section-content .img {
+            display: block;
+            width: 268px;
+            height: 268px;
+            border: 1px solid #dadada;
+            border-radius: 40px;
+            overflow: hidden;
+        }
+
+        .section-content .text {
+            width: 270px;
+            height: 152px;
+            padding-top: 24px;
+        }
+
+        .section-content .name .cn {
+            height: 24px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            color: #f9877d;
+        }
+
+        .section-content .name .en {
+            height: 16px;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #838283;
+        }
+
+        .section-content .unit-price .current {
+            height: 24px;
+            color: #f9877d;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .current .price {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .current .pound {
+            font-size: 12px;
+        }
+
+        .price i {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        .unit-price .original {
+            color: #838283;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            text-decoration: line-through;
+        }
+
+        .section-content .btn-buy {
+            display: block;
+            width: 140px;
+            height: 38px;
+            margin: 16px auto 0;
+            font-size: 18px;
+            color: #fff;
+            background-color: #4fcce1;
+            text-align: center;
+            line-height: 38px;
+            border-radius: 19px;
+        }
+
+        .section .section-title-hot {
+            background-image: url(./image/index/section_title_hot.png);
+            width: 110px;
+            height: 48px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+        }
+
+        .category {
+            clear: both;
+        }
+
+        .category-title-tea {
+            background-image: url(./image/index/category_title_tea.png);
+            width: 570px;
+            height: 40px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+        }
+
+        .szone-rule {
+            width: 100%;
+            background-color: #71c0e1;
+            clear: both; text-align: center;
+        }
+        
+        .szone-rule dt {
+            width: 580px;
+            margin: 0 auto;
+            padding: 30px 0;
+            color: #fff;
+           
+        }
+
+        .szone-rule dd {
+            font-size: 14px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+     <!--主体-->
+    <div class="szone-page">
+        <div class="page-container">
+            <div class="szone-banner">
+                 <!--特惠-->
+                <div class="inner"></div>
+            </div>
+            <div class="szone-container">
+                <div class="category">
+                    <div class="category-title"></div>
+                    <div class="category-content">
+                         <!--新品-->
+                        <div class="section">
+                            <div class="section-title"></div>
+                            <ul class="section-content">
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                         <!--热卖-->
+                        <div class="section">
+                            <div class="section-title-hot"></div>
+                            <ul class="section-content">
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                 <!--下午茶-->
+                <div class="category">
+                    <div class="category-title-tea"></div>
+                    <div class="category-content">
+                        <div class="section">
+                            <ul class="section-content">
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                                <li class="cake">
+                                    <a href="#" class="img">
+                                        <img src="./image/index/p2c2018052514421436986.jpg" alt="">
+                                    </a>
+                                    <div class="text">
+                                        <div class="name">
+                                            <p class="cn">四季一夏</p>
+                                            <p class="en">summer</p>
+                                        </div>
+                                        <div class="unit-price">
+                                            <p class="current">
+                                                <span class="price">
+                                                    <i>￥</i>
+                                                    "258"
+                                                </span>
+                                                <span class="pound">/1.8磅</span>
+                                            </p>
+                                            <p class="original">￥298/1.8磅</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-buy">立即购买</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!--活动规则-->
+            <div class="szone-rule">
+                <dl>
+                    <dt>活动规则</dt>
+                    <dd>1. 蛋糕可配送城市：上海、福州、厦门（产品请详见各地官网，如当地没有此款产品则不参加特惠活动）</dd>
+                    <dd>2. 本活动不可使用代金卡，不与其他优惠同享</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+   
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/comm.js"></script>
+</body>
+ 
+</html>
